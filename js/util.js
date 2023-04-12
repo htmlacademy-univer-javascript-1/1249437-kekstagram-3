@@ -9,10 +9,10 @@ function getRandomNumber(from, to) {
 
 function checkMaxLength(inputString, maxLength) {
   if (inputString.length <= maxLength) {
-    return true
+    return true;
   }
   else {
-    return false
+    return false;
   }
 }
 
