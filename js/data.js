@@ -19,5 +19,3 @@ function createArrayForPictures() {
     arrayForPictures.push(picture);
   }
 }
-
-export {arrayForPictures}
