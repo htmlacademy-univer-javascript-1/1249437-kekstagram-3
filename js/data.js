@@ -20,4 +20,4 @@ function createArrayForPictures() {
   }
 }
 
-export {arrayForPictures}
+export {createArrayForPictures}

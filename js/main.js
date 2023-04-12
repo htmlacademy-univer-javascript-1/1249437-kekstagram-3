@@ -1,4 +1,4 @@
 import './util.js';
-import {arrayForPictures} from './data.js';
+import {createArrayForPictures} from './data.js';
 
-arrayForPictures();
+createArrayForPictures();
