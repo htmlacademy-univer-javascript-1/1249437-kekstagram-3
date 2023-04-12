@@ -5,7 +5,7 @@ function createArrayForPictures() {
 
   for (let i = 0; i < 25; i++) {
     const id = i + 1;
-    const url = 'photos/${i+1}.jpg';
+    const url = `photos/${i+1}.jpg`;
     const description = 'nice picture (^_~)';
     const likes = getRandomNumber(25, 200);
     const comments = getRandomNumber(0, 200);
@@ -20,4 +20,4 @@ function createArrayForPictures() {
   }
 }
 
-export {createArrayForPictures}
+export {createArrayForPictures};
