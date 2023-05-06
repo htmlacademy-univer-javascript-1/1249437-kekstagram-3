@@ -1,7 +1,8 @@
 import './util.js';
-import {createArrayForPictures} from './data.js';
+import './data.js';
 import './thumbnailRendering.js';
+import './effects.js';
+import './scale.js';
+import './validation.js';
+import './uploadPictures.js';
 
-createArrayForPictures();
-
-//Задание 7 часть 2
