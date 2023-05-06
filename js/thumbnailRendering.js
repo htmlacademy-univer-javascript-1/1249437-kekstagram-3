@@ -18,4 +18,4 @@ const miniature = (photos) => {
   pictures.append(fragment);
 };
 
-miniature();
+export {miniature};
