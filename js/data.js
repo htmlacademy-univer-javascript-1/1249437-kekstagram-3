@@ -1,23 +1,17 @@
 import { getRandomNumber } from './util.js';
 
-function createArrayForPictures() {
-  const arrayForPictures = [];
-
-  for (let i = 0; i < 25; i++) {
-    const id = i + 1;
-    const url = `photos/${i+1}.jpg`;
-    const description = 'nice picture (^_~)';
-    const likes = getRandomNumber(25, 200);
-    const comments = getRandomNumber(0, 200);
-    const picture = {
-      id,
-      url,
-      description,
-      likes,
-      comments
-    };
-    arrayForPictures.push(picture);
-  }
+const picturesArray = [];
+for (let i = 0; i < 25; i++) {
+  const pictureId = i + 1;
+  const pictureUrl = `photos/${i+1}.jpg`;
+  const newPicture = {
+    id: pictureId,
+    url: pictureUrl,
+    description: `Ссылка: ${pictureUrl}, номер: ${pictureId}`,
+    likes: getRandomNumber(15, 200),
+    comments: getRandomNumber(0, 200)
+  };
+  picturesArray.push(newPicture);
 }
 
-export {createArrayForPictures};
+export { picturesArray };

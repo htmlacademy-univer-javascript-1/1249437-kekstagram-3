@@ -8,9 +8,6 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="nouislider/nouislider.css">
   <title>Кекстаграм</title>
-  <script src="pristine/pristine.min.js" type="text/javascript"></script>
-  <script src="nouislider/nouislider.js"></script>
-  <script src="js/main.js" type="module"></script>
 </head>
 
 <body>
@@ -56,8 +53,10 @@
                   </fieldset>
 
                   <!-- Предварительный просмотр изображения -->
-                  <div class="img-upload__preview">
-                    <img src="img/upload-default-image.jpg" alt="Предварительный просмотр фотографии">
+                  <div class="img-upload__preview-inner">
+                    <div class="img-upload__preview">
+                      <img src="img/upload-default-image.jpg" alt="Предварительный просмотр фотографии">
+                    </div>
                   </div>
 
                   <!-- Изменение глубины эффекта, накладываемого на изображение -->
@@ -121,10 +120,10 @@
                 <!-- Добавление хэш-тегов и комментария к изображению -->
                 <fieldset class="img-upload__text text">
                   <div class="img-upload__field-wrapper">
-                    <input type="text" class="text__hashtags" name="hashtags" placeholder="#ХэшТег" data-reg="/^#[A-Za-zА-Яа-яЁё0-9]{1-19}$/" maxlength="20">
+                    <input type="text" class="text__hashtags" name="hashtags" placeholder="#ХэшТег">
                   </div>
                   <div class="img-upload__field-wrapper">
-                    <textarea class="text__description" name="description" placeholder="Ваш комментарий..." minlength="20" maxlength="140" required></textarea>
+                    <textarea class="text__description" name="description" placeholder="Ваш комментарий..."></textarea>
                   </div>
                 </fieldset>
 
@@ -236,6 +235,8 @@
   <template id="messages">
     <div class="img-upload__message  img-upload__message--loading">Загружаем...</div>
   </template>
-
+  <script src="pristine/pristine.min.js" type="text/javascript"></script>
+  <script src="nouislider/nouislider.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 import './util.js';
 import './data.js';
-import './thumbnailRendering.js';
-import './effects.js';
-import './scale.js';
+import './thumbnail-rendering.js';
+import './effects-and-scale.js';
 import './validation.js';
-import './uploadPictures.js';
+import './upload-pictures.js';
+import './server.js';
 
