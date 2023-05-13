@@ -36,7 +36,8 @@ function validateHashTag(hashTag) {
   if (hashTag === '') {
     return true;
   }
-  return hashTagRegex.test(hashTag) && !checkLength(hashTag, MIN_HASHTAG_LENGTH) && checkLength(hashTag, MAX_HASHTAG_LENGTH);
+  return hashTagRegex.test(hashTag) && !checkLength(hashTag, MIN_HASHTAG_LENGTH)
+    && checkLength(hashTag, MAX_HASHTAG_LENGTH);
 }
 
 pristineHashTag.addValidator(
