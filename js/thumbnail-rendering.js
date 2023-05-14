@@ -1,3 +1,5 @@
+import { fetchData } from './server.js';
+
 const pictureTemplate = document.querySelector('#picture').content;
 const pictures = document.querySelector('.pictures');
 const fragment = new DocumentFragment();
@@ -11,11 +13,10 @@ const miniature = (photos) => {
     img.src = photo.url;
     likes.textContent = photo.likes;
     comments.textContent = photo.comments;
-
-    fragment.append(template);
+    fragment.appendChild(template);
   });
 
   pictures.append(fragment);
 };
 
-export {miniature};
+fetchData(miniature);
